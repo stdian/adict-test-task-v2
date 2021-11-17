@@ -22,7 +22,7 @@ $big: 1439px;
 @import 'auto';
 @import 'banks';
 @import 'for_who';
-// @import 'cases';
+@import 'cases';
 // @import 'tariffs';
 // @import 'soon';
 // @import 'safety';
@@ -38,6 +38,8 @@ body {
 	background-repeat: no-repeat, no-repeat, no-repeat, no-repeat;
 	background-position-x: calc(50% + 330px), calc(50% - 535px), calc(50% + 500px), calc(50% - 640px);
 	background-position-y: 650px, 1650px, 3303px, 3550px;
+
+	overflow-x: hidden;
 	
 
 	@media screen and (max-width: $big) {

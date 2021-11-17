@@ -28,6 +28,40 @@ const swiper = new Swiper('.swiper', {
 	// },
 });
 
+const casesMediumSwiper = new Swiper(".cases__swiper_medium", {
+	slidesPerView: "2",
+	spaceBetween: 30,
+	freeMode: true,
+	loop: false,
+	pagination: {
+	  el: ".cases__pagination_medium",
+	  clickable: true,
+	},
+	breakpoints: {
+		0: {
+		  slidesPerView: 1,
+		  spaceBetween: 21,
+		},
+		500: {
+		  slidesPerView: 2,
+		  spaceBetween: 21,
+		},
+	},
+	onAny(eventName) {
+		if (eventName === "slideChangeTransitionEnd") {
+			let swiper = document.querySelector(".cases__swiper")
+			let slides = swiper.getElementsByClassName("swiper-slide")
+			for (let i = 0; i < slides.length; i++) {
+				if (slides[i].classList.contains("swiper-slide-active")) {
+					slides[i].getElementsByClassName('case')[0].classList.add("case_selected");
+				} else {
+					slides[i].getElementsByClassName('case')[0].classList.remove("case_selected");
+				}	
+			}
+		}
+	}
+  });
+
 window.sendEmail = function(elem) {
 	let emailInput = elem.parentNode.querySelector('.email-form__input')
 	if (!emailInput.checkValidity()) {
