@@ -1,0 +1,221 @@
+$email-label-color: #3898FE;
+$privacy-color: #00B8F0;
+
+footer {
+	width: 100%;
+	min-height: 602px;
+	height: max-content;
+	margin-top: 80px;
+	background-color: $bg-color;
+	background-image: url("../img/bg/bg2.svg");
+	background-repeat: no-repeat;
+	background-position-x: calc(50% - 588px);
+	background-position-y: 205px;
+
+	@media screen and (max-width: $big) {
+		min-height: 783px;
+		height: max-content;
+		margin-top: 110px;
+	}
+
+	@media screen and (max-width: $medium) {
+		min-height: 683px;
+		height: max-content;
+		margin-top: 33px;
+	}
+
+	.contacts {
+		width: 1096px;
+		margin: 0 auto;
+		padding-top: 79.58px;
+
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+
+		@media screen and (max-width: $big) {
+			width: 440px;
+			min-height: 578px;
+			height: max-content;
+			flex-direction: column;
+			padding-top: 70px;
+		}
+
+		@media screen and (max-width: $medium) {
+			width: 278px;
+			min-height: 492px;
+			height: max-content;
+			padding-top: 60px;
+		}
+
+		.left {
+			width: 418px;
+			min-height: 228px;
+
+			@media screen and (max-width: $big) {
+				min-height: 246px;
+				text-align: center;
+			}
+
+			@media screen and (max-width: $medium) {
+				width: 278px;
+				margin: 0 auto;
+			}
+
+			.left__header {
+				@extend %h0-text-style;
+				color: $text-color;
+
+				@media screen and (max-width: $medium) {
+					font-size: 32px;
+					line-height: 38px;
+				}
+			}
+
+			.left__text {
+				width: 417px;
+				padding-top: 28px;
+				@extend %text-lead-text-style;
+				color: $text-color;
+
+				@media screen and (max-width: $big) {
+					padding-top: 40px;
+				}
+
+				@media screen and (max-width: $medium) {
+					width: 100%;
+					padding-top: 20px;
+					font-size: 18px;
+					line-height: 28px;
+					letter-spacing: 0.443077px;
+				}
+			}
+
+			.email {
+				@extend %text-lead-text-style;
+				padding-top: 18px;
+
+				@media screen and (max-width: $big) {
+					padding-top: 24px;
+				}
+
+				@media screen and (max-width: $medium) {
+					padding-top: 20px;
+					font-size: 18px;
+					line-height: 28px;
+					letter-spacing: 0.443077px;
+				}
+
+				.email__label {
+					color: $email-label-color;
+					opacity: 0.3;
+				}
+
+				.email__address {
+					text-decoration: none;
+					color: $text-color;
+
+					&:visited, &:focus {
+						color: $text-color;
+					}
+				}
+			}
+		}
+
+		.right {
+			.right-form {
+				width: 440px;
+				height: 262px;
+				margin-top: 78.32px;
+				display: flex;
+				flex-direction: column;
+				justify-content: space-between;
+
+				@media screen and (max-width: $big) {
+					margin-top: 0;
+				}
+
+				@media screen and (max-width: $medium) {
+					width: 278px;
+					margin: 0 auto;
+				}
+
+				input, textarea {
+					width: 100%;
+					background: white;
+					border: 1px solid rgba(56, 152, 254, 0.4);
+					box-sizing: border-box;
+					padding-left: 20px;
+
+					@extend %text-info-text-style;
+					color: $text-color;
+
+					&:focus {
+						outline: none; 
+						color: $text-color;
+					}
+					&::placeholder {
+						color: $input-text-placeholder-color;
+					}
+				}
+
+				input {
+					height: 43px;
+					border-radius: 40px;
+				}
+
+				textarea {
+					height: 68px;
+					resize: none;
+					border-radius: 20px;
+					padding-top: 5px;
+				}
+			}
+		}
+	}
+
+	.rights {
+		width: 1095px;
+		margin: 0 auto;
+		margin-top: 40px;
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+		align-items: center;
+
+		@media screen and (max-width: $big) {
+			width: 640px;
+		}
+
+		@media screen and (max-width: $medium) {
+			width: 278px;
+			height: 42px;
+			flex-direction: column-reverse;
+		}
+
+		.rights__copyright {
+			font-family: Montserrat;
+			font-style: normal;
+			font-weight: 500;
+			font-size: 8px;
+			line-height: 10px;
+			color: $text-color;
+		}
+		
+		.rights__privacy {
+			@extend %text-info-text-style;
+			color: $privacy-color;
+			text-decoration: none;
+
+			@media screen and (max-width: $medium) {
+				font-weight: 500;
+				font-size: 12px;
+				line-height: 16px;
+			}
+
+			&:visited, &:focus {
+				color: $privacy-color;
+			}
+		}
+	}
+}

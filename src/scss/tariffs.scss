@@ -1,0 +1,138 @@
+.tariffs {
+	width: 1072px;
+	height: 473px;
+	margin: 0 auto;
+	margin-top: 116px;
+
+	@media screen and (max-width: $big) {
+		width: 640px;
+		height: 430px;
+		margin-top: 110px;
+	}
+
+	@media screen and (max-width: $medium) {
+		width: 278px;
+		height: 687.15px;
+		margin-top: -60px;
+	}
+
+	div {
+		@media screen and (max-width: $big) {
+			display: flex;
+			flex-direction: row-reverse;
+			justify-content: space-between;
+			align-items: center;
+			margin-top: 70px;
+		}
+
+		@media screen and (max-width: $medium) {
+			display: block;
+			margin-top: 0;
+		}
+
+		.tariffs__image {
+			float: right;
+			position: relative;
+			bottom: 71px;
+	
+			@media screen and (max-width: $big) {
+				position: inherit;
+				bottom: 0;
+				width: 257px;
+				height: 264px;
+			}
+			
+			@media screen and (max-width: $medium) {
+				width: 189.83px;
+				height: 195px;
+				float: unset;
+
+				position: relative;
+				top: -47px;
+				left: 44px;
+			}
+		}
+
+		.tariffs__text {
+			width: 564px;
+			position: relative;
+			top: 52px;
+	
+			@extend %text-lead-text-style;
+			color: $text-color;
+	
+			@media screen and (max-width: $big) {
+				position: inherit;
+				top: 0;
+				width: 383px;
+				height: 224px;
+				font-size: 18px;
+				line-height: 28px;
+			}
+			
+			@media screen and (max-width: $medium) {
+				width: 278px;
+				height: 280px;
+				position: relative;
+				top: 82px;
+			}
+		}
+	}
+
+	.tariffs__header {
+		position: relative;
+		top: 24px;
+
+		@extend %h0-text-style;
+		color: $text-color;
+
+		@media screen and (max-width: $big) {
+			position: inherit;
+			top: 0;
+			text-align: center;
+		}
+
+		@media screen and (max-width: $medium) {
+			position: relative;
+			top: 241.15px;
+			font-size: 32px;
+			line-height: 38px;
+		}
+	}
+
+	.email-input {
+		position: relative;
+		top: 92px;
+
+		@media screen and (max-width: $big) {
+			position: inherit;
+			top: 0;
+			padding-top: 21.96px;
+			margin: 0 auto;
+		}
+
+		@media screen and (max-width: $medium) {
+			padding-top: 0;
+			position: relative;
+			top: 121px;
+			width: 278px;
+		}
+
+		.email-form {
+			.email-form__label {
+				.email-form__input {
+					@media screen and (max-width: $medium) {
+						width: 195px;
+					}
+				}
+			}
+
+			.btn {
+				@media screen and (max-width: $medium) {
+					width: 108px;
+					margin-left: -29px;
+				}
+			}
+		}
+	}
+}

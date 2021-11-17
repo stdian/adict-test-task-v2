@@ -1,40 +1,26 @@
 
 import '../scss/styles.scss';
 import '../index.html';
-document.designMode = "on"
 
 let showMobileMenu = false
+let flexSections = ["offer", "banks"]
 
 const swiper = new Swiper('.swiper', {
-	// Optional parameters
 	direction: 'horizontal',
 	loop: true,
-  
-	// If we need pagination
 	pagination: {
 		el: '.swiper-pagination',
 		clickable: true,
 	},
-  
-	// Navigation arrows
-	// navigation: {
-	//   nextEl: '.swiper-button-next',
-	//   prevEl: '.swiper-button-prev',
-	// },
-  
-	// // And if we need scrollbar
-	// scrollbar: {
-	//   el: '.swiper-scrollbar',
-	// },
 });
 
-const casesMediumSwiper = new Swiper(".cases__swiper_medium", {
+const casesMediumSwiper = new Swiper(".cases__swiper", {
 	slidesPerView: "2",
 	spaceBetween: 30,
 	freeMode: true,
 	loop: false,
 	pagination: {
-	  el: ".cases__pagination_medium",
+	  el: ".cases__pagination",
 	  clickable: true,
 	},
 	breakpoints: {
@@ -59,7 +45,7 @@ const casesMediumSwiper = new Swiper(".cases__swiper_medium", {
 				}	
 			}
 		}
-	}
+	},
   });
 
 window.sendEmail = function(elem) {
@@ -75,7 +61,6 @@ window.sendEmail = function(elem) {
 
 window.toggleMenu = function() {
 	let mainSections = document.querySelector("main").getElementsByTagName("section");
-	let flexSections = ["offer", "banks"]
 	for(let i = 0; i < mainSections.length; i++) {
 		if (mainSections[i].className === "mobile-menu") {
 			mainSections[i].style.display = showMobileMenu ? "none" : "flex";
@@ -88,5 +73,4 @@ window.toggleMenu = function() {
 		}
 	}
 	showMobileMenu = !showMobileMenu;
-	console.log(main);
 }

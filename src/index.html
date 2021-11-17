@@ -1,10 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 	<head>
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 		<link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
-
 		<script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
 		<title>Everypay</title>
 	</head>
@@ -31,12 +30,12 @@
 			<section class="mobile-menu">
 				<nav>
 					<ul>
-						<li onClick={this.props.menu}><a href="#how-it-works">Как это работает?</a></li>
-						<li onClick={this.props.menu}><a href="#for-who">Для кого</a></li>
-						<li onClick={this.props.menu}><a href="#cases">Кейсы</a></li>
-						<li onClick={this.props.menu}><a href="#tariffs">Тарифы</a></li>
-						<li onClick={this.props.menu}><a href="#safety">Безопасность</a></li>
-						<li onClick={this.props.menu}><a href="#footer">Контакты</a></li>
+						<li onClick="toggleMenu()"><a href="#how-it-works">Как это работает?</a></li>
+						<li onClick="toggleMenu()"><a href="#for-who">Для кого</a></li>
+						<li onClick="toggleMenu()"><a href="#cases">Кейсы</a></li>
+						<li onClick="toggleMenu()"><a href="#tariffs">Тарифы</a></li>
+						<li onClick="toggleMenu()"><a href="#safety">Безопасность</a></li>
+						<li onClick="toggleMenu()"><a href="#footer">Контакты</a></li>
 					</ul>
 				</nav>
 				<a class="btn btn_small btn_blue"><span>Вход</span></a>
@@ -244,43 +243,43 @@
 			</section>
 			<section class="cases">
 				<h2 class="cases__header">Кейсы</h2>
-				<div class="cases_big">
-					<div class="case case_selected" id="case1">
+				<div class="cases-desktop">
+					<div class="case case_selected">
 						<div class="images">
 							<img class="images__image" src="img/cases/bitrix.png" alt="Битрикс24" />
 							<img class="images__image" src="img/cases/everypay.svg" alt="Everypay" />
 							<img class="images__image" src="img/cases/telegram.png" alt="Telegram" />
 						</div>
 						<div class="text">
-							<h5 class="text__header">Автоматизация<br />диджитал-агентства</h5>
+							<h3 class="text__header">Автоматизация<br />диджитал-агентства</h3>
 							<a href="#" class="text__link">
 								Читать кейс
 								<img src="img/cases/read.svg" alt="read" />
 							</a>
 						</div>
 					</div>
-					<div class="case" id="case2">
+					<div class="case">
 						<div class="images">
 							<img class="images__image" src="img/cases/bitrix.png" alt="Битрикс24" />
 							<img class="images__image" src="img/cases/everypay.svg" alt="Everypay" />
 							<img class="images__image" src="img/cases/tochka.png" alt="Telegram" />
 						</div>
 						<div class="text">
-							<h5 class="text__header">Приём платежей<br />в рекламной<br />медиа-группе</h5>
+							<h3 class="text__header">Приём платежей<br />в рекламной<br />медиа-группе</h3>
 							<a href="#" class="text__link">
 								Читать кейс
 								<img src="img/cases/read.svg" alt="read" />
 							</a>
 						</div>
 					</div>
-					<div class="case" id="case3">
+					<div class="case">
 						<div class="images">
 							<img class="images__image" src="img/cases/bitrix.png" alt="Битрикс24" />
 							<img class="images__image" src="img/cases/everypay.svg" alt="Everypay" />
 							<img class="images__image" src="img/cases/tochka.png" alt="Telegram" />
 						</div>
 						<div class="text">
-							<h5 class="text__header">Оптимизация бухгалтерии<br />в производственной<br />компании</h5>
+							<h3 class="text__header">Оптимизация бухгалтерии<br />в производственной<br />компании</h3>
 							<a href="#" class="text__link">
 								Читать кейс
 								<img src="img/cases/read.svg" alt="read" />
@@ -288,17 +287,17 @@
 						</div>
 					</div>
 				</div>
-				<div class="cases__swiper cases__swiper_medium">
+				<div class="cases__swiper">
 					<div class="swiper-wrapper">
 						<div class="swiper-slide">
-							<div class="case case-selected" id="case1">
+							<div class="case case-selected">
 								<div class="images">
 									<img class="images__image" src="img/cases/bitrix.png" alt="Битрикс24" />
 									<img class="images__image" src="img/cases/everypay.svg" alt="Everypay" />
 									<img class="images__image" src="img/cases/telegram.png" alt="Telegram" />
 								</div>
 								<div class="text">
-									<h5 class="text__header">Автоматизация<br />диджитал-агентства</h5>
+									<h3 class="text__header">Автоматизация<br />диджитал-агентства</h3>
 									<a href="#" class="text__link">
 										Читать кейс
 										<img src="img/cases/read.svg" alt="read" />
@@ -307,14 +306,14 @@
 							</div>
 						</div>
 						<div class="swiper-slide">
-							<div class="case" id="case2">
+							<div class="case">
 								<div class="images">
 									<img class="images__image" src="img/cases/bitrix.png" alt="Битрикс24" />
 									<img class="images__image" src="img/cases/everypay.svg" alt="Everypay" />
 									<img class="images__image" src="img/cases/tochka.png" alt="Telegram" />
 								</div>
 								<div class="text">
-									<h5 class="text__header">Приём платежей<br />в рекламной<br />медиа-группе</h5>
+									<h3 class="text__header">Приём платежей<br />в рекламной<br />медиа-группе</h3>
 									<a href="#" class="text__link">
 										Читать кейс
 										<img src="img/cases/read.svg" alt="read" />
@@ -323,14 +322,14 @@
 							</div>
 						</div>
 						<div class="swiper-slide">
-							<div class="case" id="case3">
+							<div class="case">
 								<div class="images">
 									<img class="images__image" src="img/cases/bitrix.png" alt="Битрикс24" />
 									<img class="images__image" src="img/cases/everypay.svg" alt="Everypay" />
 									<img class="images__image" src="img/cases/tochka.png" alt="Telegram" />
 								</div>
 								<div class="text">
-									<h5 class="text__header">Оптимизация бухгалтерии<br />в производственной<br />компании</h5>
+									<h3 class="text__header">Оптимизация бухгалтерии<br />в производственной<br />компании</h3>
 									<a href="#" class="text__link">
 										Читать кейс
 										<img src="img/cases/read.svg" alt="read" />
@@ -339,9 +338,114 @@
 							</div>
 						</div>
 					</div>
-					<div class="cases__pagination_medium"></div>
+					<div class="cases__pagination"></div>
 				</div>
 			</section>
+			<section class="tariffs" id="tariffs">
+				<h2 class="tariffs__header">Тарифы</h2>
+				<div>
+					<img class="tariffs__image" src="img/rub.svg" alt="Рубль" />
+					<p class="tariffs__text">
+						Everypay находится в стадии закрытого beta&#8209;теста, но у вас есть возможность присоединиться к тестированию сервиса.<br /><br />
+						Для компаний, участвующих в тестировании, сервис  навсегда бесплатен. Напишите нам и мы с вами свяжемся.
+					</p>
+				</div>
+				<div class="email-input">
+					<form class="email-form" onsubmit="event.preventDefault()">
+						<label class="email-form__label">
+							<input placeholder="Введите email" type="email" class="email-form__input" required />
+						</label>
+						<button type="submit" class="btn btn_medium btn_blue" onClick="sendEmail(this)"><span>Узнать</span></button>
+					</form>
+					<div class="email-form email-form_success">
+						<div>
+							<span>Проверьте e-mail!</span>
+							<img class="email-form__success-img" alt="Success" src="img/success.svg" />
+						</div>
+					</div>
+				</div>
+			</section>
+			<section class="soon">
+				<h2 class="soon__header">Скоро появится</h2>
+				<div class="items">
+					<div class="item">
+						<div class="left">
+							<h2 class="left__header">Интеграции с CRM&#8209;системами<br />Битрикс 24 и amoCRM</h2>
+						</div>
+						<div class="right">
+							<hr class="right__hr" />
+							<div class="info">
+								<p class="info__text">Интегрируйте уведомления о платежах прямо в вашу CRM, в которой работают ваши сотрудники</p>
+								<div class="images">
+									<img class="images__image" src="img/cases/bitrix.png" alt="Битрикс24" />
+									<img class="images__image" src="img/amocrm.png" alt="amoCRM" />
+								</div>
+							</div>
+						</div>
+					</div>
+					<hr class="items__hr" />
+					<div class="item">
+						<div class="left">
+							<h2 class="left__header">Открытое API Everypay</h2>
+						</div>
+						<div class="right">
+							<hr class="right__hr" />
+							<div class="info">
+								<p class="info__text">Подключайте свои системы и интегрируйте уведомления о поступающих платежах самостоятельно с помощью простого API Everypay</p>
+							</div>
+						</div>
+					</div>
+					<hr class="items__hr" />
+					<div class="item">
+						<div class="left">
+							<h2 class="left__header">Автоматическое создание платежек</h2>
+						</div>
+						<div class="right">
+							<hr class="right__hr" />
+							<div class="info">
+								<p class="info__text">Загрузите скан счета на оплату в нашу систему и в банк&#8209;клиенте автоматически будет создано платежное поручение на основании данных из счета. С помощью технологий компьютерного зрения и машинного обучения мы достигаем высокой точности и скорости работы</p>
+							</div>
+						</div>
+					</div>
+					<hr class="items__hr" />
+				</div>
+				<h3>И еще 17 нововведений</h3>
+			</section>
+			<section class="safety" id="safety">
+				<img src="img/safety.svg" alt="safety" class="safety__image" />
+				<h2 class="safety__header">Безопасность</h2>
+				<p class="safety__text">
+					Использование Everypay полностью безопасно: подключение к банковскому счету осуществляется в режиме «только для получения выписок», а хранение информации в системе защищено и деперсонализировано.
+				</p>
+			</section>
 		</main>
+		<footer id="footer">
+			<div class="contacts">
+				<div class="left">
+					<h2 class="left__header">Подключиться</h2>
+					<p class="left__text">Хотите начать пользоваться системой? Напишите нам.</p>
+					<div class="email">
+						<p class="email__label">email</p>
+						<a href="mailto:hello@everypay.io" class="email__address">hello@everypay.io</a>
+					</div>
+				</div>
+				<div class="right">
+					<form class="right-form">
+						<label>
+							<input type="text" placeholder="Ваше имя*" required />
+						</label>
+						<label>
+							<input type="email" placeholder="Email*" required />
+						</label>
+						<textarea placeholder="Расскажите о своей компании*" required></textarea>
+						<button class="btn btn_big btn_blue"><span>Подключиться</span></button>
+					</form>
+				</div>
+			</div>
+			<div class="rights">
+				<span class="rights__copyright">&copy; 2020, Everypay</span>
+				<a href="#" class="rights__privacy">Политика конфиденциальности</a>
+			</div>
+		</footer>
 	</body>
 </html>
