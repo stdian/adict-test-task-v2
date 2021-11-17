@@ -1,0 +1,50 @@
+
+.mobile-menu {
+	display: none;
+	flex-direction: column;
+	align-content: center;
+	align-items: center;
+	height: calc(100vh - 71px);
+	justify-content: center;
+
+	@media screen and (max-width: $medium) {
+		height: calc(100vh - 43.22px);
+	}
+
+	nav {
+		ul {
+			list-style-type: none;
+			text-align: center;
+
+			li {
+				margin-bottom: 32px;
+	
+				a {
+					text-decoration: none;
+					font-family: $font;
+					font-style: normal;
+					font-weight: 500;
+					font-size: 24px;
+					line-height: 33px;
+					letter-spacing: 0.96px;
+					color: $mobile-menu-text-color;
+
+					&:visited, &:focus {
+						color: $mobile-menu-text-color;
+					}
+				}
+			}	
+		}
+	}
+	
+	.btn {
+		display: flex;
+		justify-content: space-around;
+		align-items: center;
+		margin-top: 4px;
+
+		span {
+			padding-bottom: 2px;
+		}
+	}
+}

@@ -1,0 +1,136 @@
+
+.carousel__item {
+	margin: 0 auto;
+	margin-top: 91px;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+
+	@media screen and (max-width: $big) {
+		flex-direction: column;
+		margin-top: 109px;
+	}
+
+	@media screen and (max-width: $medium) {
+		width: 278px;
+		margin-top: 57px;
+	}
+	
+	.carousel__info {
+		min-width: 470px;
+		width: min-content;
+
+		@media screen and (max-width: $medium) {
+			width: 278px;
+			min-width: unset;
+		}
+
+		.carousel__title {
+			width: 100%;
+			margin-bottom: 10px;
+			@extend %h0-text-style;
+			text-align: left;
+			color: $text-color;
+
+			@media screen and (max-width: $big) {
+				margin-bottom: 24px;
+				font-size: 48px;
+				line-height: 54px;
+				text-align: center;
+			}
+
+			@media screen and (max-width: $medium) {
+				width: 278px;
+				margin: 0 auto;
+				margin-bottom: 12px;
+				font-size: 32px;
+				line-height: 38px;
+				text-align: center;
+			}
+		}
+
+		.carousel__text {
+			@extend %text-info-text-style;
+			text-align: left;
+			color: $text-color;
+
+			@media screen and (max-width: $big) {
+				text-align: center;
+			}
+		}
+
+		.email-form {
+			margin-top: 48px;
+
+			@media screen and (max-width: $medium) {
+				display: none;
+			}
+		}
+	}
+
+	.carousel__image {
+		@media screen and (max-width: $big) {
+			margin-top: 109px;
+		}
+
+		@media screen and (max-width: $medium) {
+			margin-top: 30px;
+			width: 70%;
+		}
+	}
+}
+
+#carousel__item-1 {
+	min-width: 1024.17px;
+	width: fit-content;
+}
+
+#carousel__item-2 {
+	min-width: 1038.68px;
+	width: fit-content;
+}
+
+#carousel__item-3 {
+	min-width: 1234px;
+	width: fit-content;
+
+	.carousel__image {
+		box-shadow: 0px 10px 24px rgba(0, 0, 0, 0.06), 0px 0px 6px rgba(0, 0, 0, 0.04), 0px 0px 1px rgba(0, 0, 0, 0.04);
+		border-radius: 10px;
+	}
+}
+
+#carousel__item-4 {
+	min-width: 991.17px;
+	width: fit-content;
+	align-items: normal;
+
+	@media screen and (max-width: $big) {
+		align-items: center;
+	}
+	
+	.carousel__info {
+		width: 515px;
+		margin-top: 106px;
+
+		@media screen and (max-width: $big) {
+			margin-top: 0;
+		}
+
+		@media screen and (max-width: $medium) {
+			width: 278px;
+			margin-top: 0;
+		}
+	}
+}
+
+#carousel__item-1,
+#carousel__item-2,
+#carousel__item-3,
+#carousel__item-4 {
+	@media screen and (max-width: $big) {
+		width: 100%;
+		min-width: unset;
+	}
+}

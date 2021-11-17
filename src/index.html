@@ -1,0 +1,188 @@
+	<!DOCTYPE html>
+	<html lang="en">
+		<head>
+			<meta charset="UTF-8">
+			<meta name="viewport" content="width=device-width, initial-scale=1.0">
+			<link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+
+			<script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+			<title>Everypay</title>
+		</head>
+		<body>
+			<header class="header">
+				<img src="img/logo.svg" alt="Logo" class="header__logo" />
+				<nav>
+					<ul>
+						<li><a href="#how-it-works">Как это работает?</a></li>
+						<li><a href="#for-who">Для кого</a></li>
+						<li><a href="#cases">Кейсы</a></li>
+						<li><a href="#tariffs">Тарифы</a></li>
+						<li><a href="#safety">Безопасность</a></li>
+					</ul>
+				</nav>
+				<ul class="header__languages">
+					<li class="header__language-selected">ru</li>
+					<li>en</li>
+				</ul>
+				<a class="btn btn_big btn_white"><span>Подключиться</span></a>
+				<img src="img/menu.svg" alt="Menu" class="header__menubutton" onClick="toggleMenu()" />
+			</header>
+			<main>
+				<section class="mobile-menu">
+					<nav>
+						<ul>
+							<li onClick={this.props.menu}><a href="#how-it-works">Как это работает?</a></li>
+							<li onClick={this.props.menu}><a href="#for-who">Для кого</a></li>
+							<li onClick={this.props.menu}><a href="#cases">Кейсы</a></li>
+							<li onClick={this.props.menu}><a href="#tariffs">Тарифы</a></li>
+							<li onClick={this.props.menu}><a href="#safety">Безопасность</a></li>
+							<li onClick={this.props.menu}><a href="#footer">Контакты</a></li>
+						</ul>
+					</nav>
+					<a class="btn btn_small btn_blue"><span>Вход</span></a>
+				</section>
+				<section class="swiper">
+					<div class="swiper-wrapper">
+						<div class="swiper-slide carousel">
+							<div class="carousel__item" id="carousel__item-1">
+								<div class="carousel__info">
+									<h2 class="carousel__title">Не пропускайте важные оплаты</h2>
+									<p class="carousel__text">Если от них зависят ваши проекты или старт рекламных кампаний</p>
+									<div class="email-input">
+										<form class="email-form" onsubmit="event.preventDefault()">
+											<label class="email-form__label">
+												<input placeholder="Введите email" type="email" class="email-form__input" required />
+											</label>
+											<button type="submit" class="btn btn_medium btn_blue" onClick="sendEmail(this)"><span>Узнать</span></button>
+										</form>
+										<div class="email-form email-form_success">
+											<div>
+												<img class="email-form__success-img" alt="Success" src="img/success.svg" />
+												<span>Проверьте e-mail!</span>
+											</div>
+										</div>
+									</div>
+								</div>
+								<img alt="Slider 1" src="img/slider/slider1.svg" class="carousel__image" />
+							</div>
+						</div>
+						<div class="swiper-slide carousel">
+							<div class="carousel__item" id="carousel__item-2">
+								<div class="carousel__info">
+									<h2 class="carousel__title">Сократите издержки на бухгалтерию и коммуникации</h2>
+									<p class="carousel__text">Получайте информацию о платежах на счет компании там, где вам удобно</p>
+									<div class="email-input">
+										<form class="email-form" onsubmit="event.preventDefault()">
+											<label class="email-form__label">
+												<input placeholder="Введите email" type="email" class="email-form__input" required />
+											</label>
+											<button type="submit" class="btn btn_medium btn_blue" onClick="sendEmail(this)"><span>Узнать</span></button>
+										</form>
+										<div class="email-form email-form_success">
+											<div>
+												<img class="email-form__success-img" alt="Success" src="img/success.svg" />
+												<span>Проверьте e-mail!</span>
+											</div>
+										</div>
+									</div>
+								</div>
+								<img alt="Slider 2" src="img/slider/slider2.svg" class="carousel__image" />
+							</div>
+						</div>
+						<div class="swiper-slide carousel">
+							<div class="carousel__item" id="carousel__item-3">
+								<div class="carousel__info">
+									<h2 class="carousel__title">Создавайте собственные<br /> сценарии действий</h2>
+									<p class="carousel__text">при поступлении денег на счет вашей компании</p>
+									<div class="email-input">
+										<form class="email-form" onsubmit="event.preventDefault()">
+											<label class="email-form__label">
+												<input placeholder="Введите email" type="email" class="email-form__input" required />
+											</label>
+											<button type="submit" class="btn btn_medium btn_blue" onClick="sendEmail(this)"><span>Узнать</span></button>
+										</form>
+										<div class="email-form email-form_success">
+											<div>
+												<img class="email-form__success-img" alt="Success" src="img/success.svg" />
+												<span>Проверьте e-mail!</span>
+											</div>
+										</div>
+									</div>
+								</div>
+								<img alt="Slider 3" src="img/slider/slider3.svg" class="carousel__image" />
+							</div>
+						</div>
+						<div class="swiper-slide carousel">
+							<div class="carousel__item" id="carousel__item-4">
+								<div class="carousel__info">
+									<h2 class="carousel__title">Реагируйте на платежи так быстро, как они поступают на ваш счет</h2>
+									<div class="email-input">
+										<form class="email-form" onsubmit="event.preventDefault()">
+											<label class="email-form__label">
+												<input placeholder="Введите email" type="email" class="email-form__input" required />
+											</label>
+											<button type="submit" class="btn btn_medium btn_blue" onClick="sendEmail(this)"><span>Узнать</span></button>
+										</form>
+										<div class="email-form email-form_success">
+											<div>
+												<img class="email-form__success-img" alt="Success" src="img/success.svg" />
+												<span>Проверьте e-mail!</span>
+											</div>
+										</div>
+									</div>
+								</div>
+								<img alt="Slider 4" src="img/slider/slider4.svg" class="carousel__image" />
+							</div>
+						</div>
+					</div>
+					<div class="swiper-pagination"></div>
+				</section>
+				<section class="offer">
+					<img src="img/offer.svg" alt="Offer" />
+					<div class="offer__info">
+						<h2 class="offer__title">Мы предлагаем вам простой инструмент, чтобы автоматизировать информирование о поступающих оплатах.</h2>
+						<p class="offer__text">Бухгалтер на карантине, а директор недоступен? Ответственный сотрудник моментально узнает о поступлении денег на счет компании.</p>
+					</div>
+				</section>
+				<section class="how-it-works" id="how-it-works">
+					<h2>Как это работает</h2>
+					<div class="how-it-works__info">
+						<div class="how-it-works__data">
+							<img src="img/how_it_works/how_it_works1.svg" alt="" />
+							<p>Подключите свой<br />банковский счет</p>
+						</div>
+						<div class="how-it-works__data">
+							<img src="img/how_it_works/how_it_works2.svg" alt="" />
+							<p>Выберите, куда и кому<br />отправлять информацию</p>
+						</div>
+						<div class="how-it-works__data">
+							<img src="img/how_it_works/how_it_works3.svg" alt="" />
+							<p>Получайте информацию<br />о поступивших оплатах</p>
+						</div>
+					</div>
+				</section>
+				<section class="auto">
+					<div class="auto__left-side">
+						<h2>Автоматизируйте<br />бизнес-процессы</h2>
+					</div>
+					<div class="auto__right-side">
+						<p>Подключайте привычные приложения, которые вы используете в работе.</p>
+						<div class="email-input">
+							<form class="email-form" onsubmit="event.preventDefault()">
+								<label class="email-form__label">
+									<input placeholder="Введите email" type="email" class="email-form__input" required />
+								</label>
+								<button type="submit" class="btn btn_medium btn_blue" onClick="sendEmail(this)"><span>Узнать</span></button>
+							</form>
+							<div class="email-form email-form_success">
+								<div>
+									<img class="email-form__success-img" alt="Success" src="img/success.svg" />
+									<span>Проверьте e-mail!</span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</section>
+			</main>
+		</body>
+	</html>

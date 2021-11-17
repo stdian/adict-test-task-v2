@@ -1,0 +1,130 @@
+$auto-bg: #E8F4F7;
+$auto-form-bg: #FFFFFF;
+$email-border-color: rgba(56, 152, 254, 0.4);
+
+.auto {
+	width: 1098px;
+	min-height: 294px;
+	overflow: hidden;
+	margin: 0 auto;
+	margin-top: 140px;
+	background-color: $auto-bg;
+	background-image: url("../img/bg/bg2.svg");
+	background-repeat: no-repeat;
+	background-position-x: 667px;
+	background-position-y: 20.5px;
+
+	@media screen and (max-width: $big) {
+		width: 639px;
+		min-height: 388px;
+		margin-top: 110px;
+
+		background-position-x: 377px;
+		background-position-y: 20.5px;
+	}
+
+	@media screen and (max-width: $medium) {
+		width: 100%;
+		height: 356px;
+		margin-top: 45px;
+
+		background-size: 203.7px 244.5px;
+		background-position-x: 325px;
+	}
+
+	.auto__left-side {
+		float: left;
+
+		@media screen and (max-width: $big) {
+			float: unset;
+		}
+
+		h2 {
+			margin-top: 60px;
+			margin-left: 94px;
+
+			@extend %h0-text-style;
+			color: $text-color;
+
+			@media screen and (max-width: $big) {
+				margin-left: 0px;
+				margin-top: 0px;
+				padding-top: 60px;
+				text-align: center;
+			}
+
+			@media screen and (max-width: $medium) {
+				font-size: 28px;
+				line-height: 36px;
+				letter-spacing: 0.44px;
+			}
+		}
+	}
+
+	.auto__right-side {
+		float: right;
+
+		@media screen and (max-width: $big) {
+			float: unset;
+		}
+
+		p {
+			width: 433.2px;
+			margin-top: 70px;
+			margin-right: 100px;
+			margin-bottom: 60px;
+
+		@extend %text-info-text-style;
+			color: $text-color;
+
+			@media screen and (max-width: $big) {
+				margin: 0 auto;
+				margin-top: 24px;
+				text-align: center;
+				margin-bottom: 48px;
+			}
+
+			@media screen and (max-width: $medium) {
+				min-width: 278px;
+				width: 90%;
+			}
+		}
+
+		.email-input {
+			margin: 0 auto;
+
+			.email-form {
+				margin-bottom: 60px;
+
+				@media screen and (max-width: $big){
+					margin: 0 auto;
+					margin-bottom: 60px;
+				}
+
+				@media screen and (max-width: $medium) {
+					width: 278px;
+				}
+
+				.email-form__label {
+					.email-form__input {
+						border: 1px solid $email-border-color;
+						background-color: $auto-form-bg;
+
+						@media screen and (max-width: $medium) {
+							width: 195px;
+						}
+					}
+				}
+
+				.btn {
+					@media screen and (max-width: $medium) {
+						width: 108px;
+						margin-left: -29px;
+					}
+				}
+			}
+		}
+
+		
+	}
+}

@@ -1,0 +1,59 @@
+.btn {
+	height: 48px;
+	@extend %button-text-style;
+	text-align: center;
+	cursor: pointer;
+
+	&:hover {
+		box-shadow: 0px 6px 18px rgba(53, 152, 254, 0.38185);
+	}
+
+	&:focus {
+		outline: none; 
+	}
+}
+
+.btn_big {
+	width: 175px;
+}
+
+.btn_medium {
+	width: 161px;
+}
+
+.btn_small {
+	width: 120px;
+}
+
+.btn_white {
+	background: $btn-white-bg;
+	border: 1px solid transparent;
+    border-radius: 44px;
+	position: relative;
+	
+	&:after {
+		position: absolute;
+		top: -2px; bottom: -2px;
+		left: -2px; right: -2px;
+		background: $gradient;
+		content: '';
+		z-index: -1;
+		border-radius: 44px;
+	}
+
+	span {
+		background: $gradient;
+		background-clip: text;
+		color: transparent;
+	}
+}
+
+.btn_blue {
+	background: $reverse-gradient;
+	border: 0;	
+	border-radius: 44px;
+	
+	span {
+		color: $btn-blue-text;
+	}
+}

@@ -1,0 +1,243 @@
+@font-face {
+	font-family: 'Avenir Next Cyr';
+	src: local('Avenir Next Cyr Bold'), local('AvenirNextCyr-Bold'),
+		url('../fonts/AvenirNextCyr-Bold.woff2') format('woff2'),
+		url('../fonts/AvenirNextCyr-Bold.woff') format('woff');
+	font-weight: bold;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Avenir Next Cyr';
+	src: local('Avenir Next Cyr Thin Italic'), local('AvenirNextCyr-ThinItalic'),
+		url('../fonts/AvenirNextCyr-ThinItalic.woff2') format('woff2'),
+		url('../fonts/AvenirNextCyr-ThinItalic.woff') format('woff');
+	font-weight: 100;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: 'Avenir Next Cyr';
+	src: local('Avenir Next Cyr Medium Italic'), local('AvenirNextCyr-MediumItalic'),
+		url('../fonts/AvenirNextCyr-MediumItalic.woff2') format('woff2'),
+		url('../fonts/AvenirNextCyr-MediumItalic.woff') format('woff');
+	font-weight: 500;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: 'Avenir Next Cyr Ultra';
+	src: local('Avenir Next Cyr Ultra Light Italic'), local('AvenirNextCyr-UltraLightIt'),
+		url('../fonts/AvenirNextCyr-UltraLightIt.woff2') format('woff2'),
+		url('../fonts/AvenirNextCyr-UltraLightIt.woff') format('woff');
+	font-weight: 200;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: 'Avenir Next Cyr';
+	src: local('Avenir Next Cyr Light'), local('AvenirNextCyr-Light'),
+		url('../fonts/AvenirNextCyr-Light.woff2') format('woff2'),
+		url('../fonts/AvenirNextCyr-Light.woff') format('woff');
+	font-weight: 300;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Avenir Next Cyr';
+	src: local('Avenir Next Cyr Italic'), local('AvenirNextCyr-Italic'),
+		url('../fonts/AvenirNextCyr-Italic.woff2') format('woff2'),
+		url('../fonts/AvenirNextCyr-Italic.woff') format('woff');
+	font-weight: normal;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: 'Avenir Next Cyr';
+	src: local('Avenir Next Cyr Bold Italic'), local('AvenirNextCyr-BoldItalic'),
+		url('../fonts/AvenirNextCyr-BoldItalic.woff2') format('woff2'),
+		url('../fonts/AvenirNextCyr-BoldItalic.woff') format('woff');
+	font-weight: bold;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: 'Avenir Next Cyr';
+	src: local('Avenir Next Cyr Heavy'), local('AvenirNextCyr-Heavy'),
+		url('../fonts/AvenirNextCyr-Heavy.woff2') format('woff2'),
+		url('../fonts/AvenirNextCyr-Heavy.woff') format('woff');
+	font-weight: 900;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Avenir Next Cyr';
+	src: local('Avenir Next Cyr Heavy Italic'), local('AvenirNextCyr-HeavyItalic'),
+		url('../fonts/AvenirNextCyr-HeavyItalic.woff2') format('woff2'),
+		url('../fonts/AvenirNextCyr-HeavyItalic.woff') format('woff');
+	font-weight: 900;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: 'Avenir Next Cyr';
+	src: local('Avenir Next Cyr Thin'), local('AvenirNextCyr-Thin'),
+		url('../fonts/AvenirNextCyr-Thin.woff2') format('woff2'),
+		url('../fonts/AvenirNextCyr-Thin.woff') format('woff');
+	font-weight: 100;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Avenir Next Cyr';
+	src: local('Avenir Next Cyr Medium'), local('AvenirNextCyr-Medium'),
+		url('../fonts/AvenirNextCyr-Medium.woff2') format('woff2'),
+		url('../fonts/AvenirNextCyr-Medium.woff') format('woff');
+	font-weight: 500;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Avenir Next Cyr';
+	src: local('Avenir Next Cyr Demi Italic'), local('AvenirNextCyr-DemiItalic'),
+		url('../fonts/AvenirNextCyr-DemiItalic.woff2') format('woff2'),
+		url('../fonts/AvenirNextCyr-DemiItalic.woff') format('woff');
+	font-weight: bold;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: 'Avenir Next Cyr';
+	src: local('Avenir Next Cyr Demi'), local('AvenirNextCyr-Demi'),
+		url('../fonts/AvenirNextCyr-Demi.woff2') format('woff2'),
+		url('../fonts/AvenirNextCyr-Demi.woff') format('woff');
+	font-weight: bold;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Avenir Next Cyr';
+	src: local('Avenir Next Cyr Regular'), local('AvenirNextCyr-Regular'),
+		url('../fonts/AvenirNextCyr-Regular.woff2') format('woff2'),
+		url('../fonts/AvenirNextCyr-Regular.woff') format('woff');
+	font-weight: normal;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Avenir Next Cyr';
+	src: local('Avenir Next Cyr Light Italic'), local('AvenirNextCyr-LightItalic'),
+		url('../fonts/AvenirNextCyr-LightItalic.woff2') format('woff2'),
+		url('../fonts/AvenirNextCyr-LightItalic.woff') format('woff');
+	font-weight: 300;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: 'Avenir Next Cyr Ultra';
+	src: local('Avenir Next Cyr Ultra Light'), local('AvenirNextCyr-UltraLight'),
+		url('../fonts/AvenirNextCyr-UltraLight.woff2') format('woff2'),
+		url('../fonts/AvenirNextCyr-UltraLight.woff') format('woff');
+	font-weight: 200;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Montserrat';
+	src: local('Montserrat Medium'), local('Montserrat-Medium'),
+		url('../fonts/Montserrat-Medium.woff') format('woff');
+	font-weight: 500;
+	font-style: normal;
+}
+
+%h0-text-style {
+	font-family: $font;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 40px;
+	line-height: 46px;
+	letter-spacing: 0.985946px;
+}
+
+%h1-text-style {
+	font-family: $font;
+	font-style: normal;
+	font-weight: bold;
+	font-size: 40px;
+	line-height: 46px;
+	letter-spacing: 0.985946px;
+}
+
+%h2-text-style {
+	font-family: $font;
+	font-style: normal;
+	font-weight: 600;
+	font-size: 28px;
+	line-height: 36px;
+	letter-spacing: 0.44px;
+}
+
+%h3-text-style {
+	font-family: $font;
+	font-style: normal;
+	font-weight: 600;
+	font-size: 22px;
+	line-height: 30px;
+	letter-spacing: 0.44px;
+}
+
+%text-info-text-style {
+	font-family: $font;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 18px;
+	line-height: 28px;
+	letter-spacing: 0.443077px;
+}
+
+%text-lead-text-style {
+	font-family: $font;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 24px;
+	line-height: 34px;
+	letter-spacing: 0.713846px;
+}
+
+%header-menu-text-style {
+	text-decoration: none;
+	font-family: $font;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 14px;
+	line-height: 19px;
+	letter-spacing: 0.96px;
+}
+
+%header-lang-text-style {
+	font-family: $font;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 16px;
+	line-height: 22px;
+	letter-spacing: 0.96px;
+	text-transform: uppercase;
+}
+
+%button-text-style {
+	font-family: $font;
+	font-style: normal;
+	font-weight: 600;
+	font-size: 16px;
+	line-height: 22px;
+	letter-spacing: 0.369231px;
+}
+
+%email-input-text-style {
+	font-family: $font;
+	font-style: normal;
+	font-weight: normal;
+	font-size: 16px;
+	line-height: 24px;
+	letter-spacing: 0.96px;
+}
