@@ -1,0 +1,124 @@
+.for-who {
+	width: 1098px;
+	height: 493px;
+	margin: 0 auto;
+	margin-top: 160px;
+
+	@media screen and (max-width: $big) {
+		width: 639px;
+		height: 415px;
+		margin-top: 110px;
+	}
+
+	@media screen and (max-width: $medium) {
+		width: 200px;
+		height: 977px;
+	}
+
+	.for-who__header {
+		@extend %h0-text-style;
+		color: $text-color;
+
+		@media screen and (max-width: $big) {
+			text-align: center;
+		}
+	
+		@media screen and (max-width: $medium) {
+			font-size: 32px;
+			line-height: 38px;
+		}
+	}
+
+	.items {
+		width: 1098px;
+		height: 357px;
+		margin-top: 90px;
+		display: flex;
+		flex-direction: row;
+		justify-content: space-between;
+
+		@media screen and (max-width: $big) {
+			width: 639px;
+			height: 299px;
+			margin-top: 70px;
+		}
+
+		@media screen and (max-width: $medium) {
+			width: 200px;
+			min-height: 899px;
+			height: max-content;
+			margin-top: 40px;
+			flex-direction: column;
+		}
+
+		.item {
+			width: 346px;
+			height: 328px;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: space-between;
+
+			@media screen and (max-width: $big) {
+				width: 199px;
+				height: 299px;
+			}
+	
+			@media screen and (max-width: $medium) {
+				width: 200px;
+				min-height: 287px;
+				height: fit-content;
+			}
+
+			.item__img {
+				@media screen and (max-width: $big) {
+					max-height: 135px;
+				}
+			}
+
+			.info {
+				height: 127px;
+
+				@media screen and (max-width: $big) {
+					height: 134px;
+				}
+		
+				@media screen and (max-width: $medium) {
+					min-height: 122px;
+					height: fit-content;
+
+				}
+
+				.info__header {
+					margin-bottom: 13px;
+					@extend %h3-text-style;
+					color: $text-color;
+
+					@media screen and (max-width: $big) {
+						margin-bottom: 24px;
+					}
+
+					@media screen and (max-width: $medium) {
+						margin-bottom: 12px;
+						text-align: center;
+					}
+				}
+	
+				.info__text {
+					max-width: 240px;
+					@extend %text-info-text-style;
+					color: $text-color;
+
+					@media screen and (max-width: $big) {
+						font-size: 16px;
+						line-height: 20px;
+					}
+
+					@media screen and (max-width: $medium) {
+						text-align: center;
+					}
+				}
+			}
+		}
+	}
+}
