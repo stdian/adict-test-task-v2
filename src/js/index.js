@@ -3,6 +3,7 @@ import '../scss/styles.scss';
 import '../index.html';
 
 let showMobileMenu = false
+let flexSections = ["offer", "banks", "tariffs"]
 
 const swiper = new Swiper('.swiper', {
 	direction: 'horizontal',
@@ -59,6 +60,19 @@ window.sendEmail = function(elem) {
 }
 
 window.toggleMenu = function() {
-	document.querySelector(".mobile-menu").style.display = showMobileMenu ? "flex" : "none";
+	let mainSections = document.querySelector("main").getElementsByTagName("section");
+	for(let i = 0; i < mainSections.length; i++) {
+		if (mainSections[i].className === "mobile-menu") {
+			mainSections[i].style.display = showMobileMenu ? "flex" : "none";
+			document.querySelector("footer").style.display = showMobileMenu ? "none" : "block"
+		} else {
+			if (flexSections.includes(mainSections[i].className)) {
+				mainSections[i].style.display = showMobileMenu ? "none" : "flex";
+			} else {
+				mainSections[i].style.display = showMobileMenu ? "none" : "block";
+			}
+		}
+	}
+	// document.querySelector(".mobile-menu").style.display = showMobileMenu ? "flex" : "none";
 	showMobileMenu = !showMobileMenu;
 }
