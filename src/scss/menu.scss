@@ -4,7 +4,7 @@
 	flex-direction: column;
 	align-content: center;
 	align-items: center;
-	height: calc(100vh - 71px);
+	min-height: calc(100vh - 71px);
 	justify-content: center;
 
 	@media screen and (max-width: $medium) {

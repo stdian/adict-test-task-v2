@@ -3,7 +3,6 @@ import '../scss/styles.scss';
 import '../index.html';
 
 let showMobileMenu = false
-let flexSections = ["offer", "banks"]
 
 const swiper = new Swiper('.swiper', {
 	direction: 'horizontal',
@@ -60,17 +59,6 @@ window.sendEmail = function(elem) {
 }
 
 window.toggleMenu = function() {
-	let mainSections = document.querySelector("main").getElementsByTagName("section");
-	for(let i = 0; i < mainSections.length; i++) {
-		if (mainSections[i].className === "mobile-menu") {
-			mainSections[i].style.display = showMobileMenu ? "none" : "flex";
-		} else {
-			if (flexSections.includes(mainSections[i].className)) {
-				mainSections[i].style.display = showMobileMenu ? "flex" : "none";
-			} else {
-				mainSections[i].style.display = showMobileMenu ? "block" : "none";
-			}
-		}
-	}
+	document.querySelector(".mobile-menu").style.display = showMobileMenu ? "flex" : "none";
 	showMobileMenu = !showMobileMenu;
 }
