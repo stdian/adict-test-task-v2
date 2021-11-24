@@ -3,7 +3,7 @@ $banks-block-header-color: rgba(56, 152, 254, 0.5);
 
 .banks {
 	width: 1098px;
-	height: 556px;
+	min-height: 556px;
 	margin: 0 auto;
 	margin-top: 140px;
 	display: flex;
@@ -12,13 +12,13 @@ $banks-block-header-color: rgba(56, 152, 254, 0.5);
 
 	@media screen and (max-width: $big) {
 		width: 536px;
-		height: 996px;
+		min-height: 996px;
 		margin-top: 110px;
 	}
 
 	@media screen and (max-width: $medium) {
 		width: 278px;
-		height: 681px;
+		min-height: 681px;
 		margin-top: 141px;
 	}
 
@@ -38,25 +38,25 @@ $banks-block-header-color: rgba(56, 152, 254, 0.5);
 
 	.banks__blocks {
 		width: 100%;
-		height: 420px;
+		min-height: 420px;
 		display: flex;
 		flex-direction: row;
 		justify-content: space-between;
 
 		@media screen and (max-width: $big) {
-			height: 880px;
+			min-height: 880px;
 			flex-direction: column;
 		}
 
 		@media screen and (max-width: $medium) {
-			height: 585px;
+			min-height: 585px;
 		}
 	}
 
 	.left-block,
 	.right-block {
 		width: 534px;
-		height: 420px;
+		min-height: 420px;
 		border: $banks-block-border-color;
 
 		@media screen and (max-width: $medium) {
@@ -77,42 +77,24 @@ $banks-block-header-color: rgba(56, 152, 254, 0.5);
 	}
 
 	.left-block {
-		#bank1 {
-			position: relative;
-			top: 20px;
-			left: 40px;
+		.left-block__banks {
+			display: grid;
+			grid-column-gap: 42.85px;
+			align-items: start;
+			grid-template-columns: repeat(2, 1fr);
+			padding-left: 45px;
+			padding-right: 45px;
 
 			@media screen and (max-width: $medium) {
-				width: 103.4px;
-				height: 69.2px;
-				top: 6.36px;
-				left: 19.19px;
+				padding-left: 16px;
+				padding-right: 16px;
+				grid-column-gap: 25px;
 			}
-		}
 
-		#bank2 {
-			position: relative;
-			left: 73.24px;
-			top: 8.09px;
-
-			@media screen and (max-width: $medium) {
-				width: 96.73px;
-				height: 48px;
-				left: 37px;
-				top: -4px;
-			}
-		}
-
-		#bank3 {
-			position: relative;
-			left: 40px;
-			top: 18.49px;
-
-			@media screen and (max-width: $medium) {
-				width: 110.5px;
-				height: 64px;
-				left: 19.19px;
-				top: -10px;
+			img {
+				@media screen and (max-width: $medium) {
+					max-width: 100%;
+				}
 			}
 		}
 
@@ -150,13 +132,13 @@ $banks-block-header-color: rgba(56, 152, 254, 0.5);
 		}
 
 		@media screen and (max-width: $medium) {
-			height: 279px;
+			min-height: 279px;
 		}
 	}
 
 	.right-block {
 		.integrations {
-			height: 279.35px;
+			min-height: 279.35px;
 			margin-left: 40px;
 			margin-top: 36px;
 			display: flex;
@@ -164,7 +146,7 @@ $banks-block-header-color: rgba(56, 152, 254, 0.5);
 			justify-content: space-between;
 
 			@media screen and (max-width: $medium) {
-				height: 160px;
+				min-height: 160px;
 				margin-left: 16px;
 				margin-top: 28px;
 			}
@@ -191,7 +173,7 @@ $banks-block-header-color: rgba(56, 152, 254, 0.5);
 		}
 
 		@media screen and (max-width: $medium) {
-			height: 256px;
+			min-height: 256px;
 		}
 	}
 
