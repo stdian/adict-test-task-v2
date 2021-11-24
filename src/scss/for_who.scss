@@ -1,18 +1,18 @@
 .for-who {
 	width: 1098px;
-	height: 493px;
+	min-height: 493px;
 	margin: 0 auto;
 	margin-top: 160px;
 
 	@media screen and (max-width: $big) {
 		width: 639px;
-		height: 415px;
+		min-height: 415px;
 		margin-top: 110px;
 	}
 
 	@media screen and (max-width: $medium) {
 		width: 200px;
-		height: 977px;
+		min-height: 977px;
 	}
 
 	.for-who__header {
@@ -31,24 +31,24 @@
 
 	.items {
 		width: 1098px;
-		height: 357px;
+		min-height: 357px;
 		margin-top: 90px;
-		display: flex;
-		flex-direction: row;
-		justify-content: space-between;
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		grid-row-gap: 30px;
 
 		@media screen and (max-width: $big) {
 			width: 639px;
-			height: 299px;
+			min-height: 299px;
 			margin-top: 70px;
 		}
 
 		@media screen and (max-width: $medium) {
+			grid-template-columns: repeat(1, 1fr);
 			width: 200px;
 			min-height: 899px;
 			height: max-content;
 			margin-top: 40px;
-			flex-direction: column;
 		}
 
 		.item {

@@ -6,13 +6,13 @@
 
 	@media screen and (max-width: $big) {
 		width: 640px;
-		height: 283.19px;
+		min-height: 283.19px;
 		margin-top: 110px;
 	}
 
 	@media screen and (max-width: $medium) {
 		width: 278px;
-		height: 650px;
+		min-height: 650px;
 		margin-top: 92px;
 	}
 
@@ -31,27 +31,27 @@
 	}
 
 	.how-it-works__info {
-		display: flex;
+		display: grid;
+		grid-template-columns: repeat(3, 1fr);
+		grid-row-gap: 30px;
 		width: 1094px;
-		height: 237px;
+		min-height: 237px;
 		margin-top: 90px;
-		justify-content: space-around;
-		flex-direction: row;
 
 		@media screen and (max-width: $big) {
 			width: 640px;
-			height: 167.19px;
+			min-height: 167.19px;
 			margin-top: 70px;
 		}
 
 		@media screen and (max-width: $medium) {
+			grid-template-columns: repeat(1, 1fr);
+			grid-row-gap: 40px;
 			width: 200px;
 			min-height: 534px;
 			height: fit-content;
 			margin: 0 auto;
 			margin-top: 40px;
-			flex-direction: column;
-			justify-content: space-between;
 		}
 
 		.how-it-works__data {
