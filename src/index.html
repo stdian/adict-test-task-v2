@@ -346,27 +346,29 @@
 				</div>
 			</section>
 			<section class="tariffs" id="tariffs">
-				<h2 class="tariffs__header">Тарифы</h2>
-				<div>
-					<img class="tariffs__image" src="img/rub.svg" alt="Рубль" />
+				<div class="tariffs__info">
+					<h2 class="tariffs__header">Тарифы</h2>
 					<p class="tariffs__text">
 						Everypay находится в стадии закрытого beta&#8209;теста, но у вас есть возможность присоединиться к тестированию сервиса.<br /><br />
 						Для компаний, участвующих в тестировании, сервис  навсегда бесплатен. Напишите нам и мы с вами свяжемся.
 					</p>
-				</div>
-				<div class="email-input">
-					<form class="email-form" onsubmit="event.preventDefault()">
-						<label class="email-form__label">
-							<input placeholder="Введите email" type="email" class="email-form__input" required />
-						</label>
-						<button type="submit" class="btn btn_medium btn_blue" onClick="sendEmail(this)"><span>Узнать</span></button>
-					</form>
-					<div class="email-form email-form_success">
-						<div>
-							<span>Проверьте e-mail!</span>
-							<img class="email-form__success-img" alt="Success" src="img/success.svg" />
+					<div class="email-input">
+						<form class="email-form" onsubmit="event.preventDefault()">
+							<label class="email-form__label">
+								<input placeholder="Введите email" type="email" class="email-form__input" required />
+							</label>
+							<button type="submit" class="btn btn_medium btn_blue" onClick="sendEmail(this)"><span>Узнать</span></button>
+						</form>
+						<div class="email-form email-form_success">
+							<div>
+								<span>Проверьте e-mail!</span>
+								<img class="email-form__success-img" alt="Success" src="img/success.svg" />
+							</div>
 						</div>
 					</div>
+				</div>
+				<div class="tariffs__image">
+					<img src="img/rub.svg" alt="Рубль" />
 				</div>
 			</section>
 			<section class="soon">
