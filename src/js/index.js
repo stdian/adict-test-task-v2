@@ -3,7 +3,7 @@ import '../scss/styles.scss';
 import '../index.html';
 
 let showMobileMenu = false
-let flexSections = ["offer", "banks", "tariffs"]
+let flexSections = ["offer", "banks", "tariffs", "safety"]
 
 const swiper = new Swiper('.swiper', {
 	direction: 'horizontal',
@@ -61,6 +61,7 @@ window.sendEmail = function(elem) {
 
 window.toggleMenu = function() {
 	let mainSections = document.querySelector("main").getElementsByTagName("section");
+	showMobileMenu = !showMobileMenu;
 	for(let i = 0; i < mainSections.length; i++) {
 		if (mainSections[i].className === "mobile-menu") {
 			mainSections[i].style.display = showMobileMenu ? "flex" : "none";
@@ -73,6 +74,4 @@ window.toggleMenu = function() {
 			}
 		}
 	}
-	// document.querySelector(".mobile-menu").style.display = showMobileMenu ? "flex" : "none";
-	showMobileMenu = !showMobileMenu;
 }

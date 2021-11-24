@@ -2,19 +2,19 @@ $hr-gradient: linear-gradient(-90deg, #00B8F0 0%, #00B8F0 0.01%, #B2EEFC 73.96%)
 
 .soon {
 	width: 1098px;
-	height: 870.58px;
+	min-height: 870.58px;
 	margin: 0 auto;
 	margin-top: 131px;
 
 	@media screen and (max-width: $big) {
 		width: 640px;
-		height: 1082.58px;
+		min-height: 1082.58px;
 		margin-top: 110px;
 	}
 
 	@media screen and (max-width: $medium) {
 		width: 278px;
-		height: 1002px;
+		min-height: 1002px;
 		margin-top: 96.85px;
 	}
 
