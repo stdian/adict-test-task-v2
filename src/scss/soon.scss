@@ -170,7 +170,7 @@ $hr-gradient: linear-gradient(-90deg, #00B8F0 0%, #00B8F0 0.01%, #B2EEFC 73.96%)
 		}
 	}
 
-	h3 {
+	.soon__footer {
 		@extend %h3-text-style;
 		color: $text-color;
 		text-align: center;

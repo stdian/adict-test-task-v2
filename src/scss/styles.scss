@@ -40,6 +40,13 @@ body {
 	background-position-y: 650px, 1650px, 3303px, 3550px;
 
 	overflow-x: hidden;
+
+	main {
+		.title {
+			font-size: 0px;
+			visibility: hidden;
+		}
+	}
 	
 
 	@media screen and (max-width: $big) {

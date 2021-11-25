@@ -40,8 +40,7 @@ $email-border-color: rgba(56, 152, 254, 0.4);
 		}
 
 		h2 {
-			margin-top: 60px;
-			margin-left: 94px;
+			padding: 60px 94px;
 
 			@extend %h0-text-style;
 			color: $text-color;
@@ -70,9 +69,7 @@ $email-border-color: rgba(56, 152, 254, 0.4);
 
 		p {
 			width: 433.2px;
-			margin-top: 70px;
-			margin-right: 100px;
-			margin-bottom: 60px;
+			padding: 70px 100px 60px 0px;
 
 		@extend %text-info-text-style;
 			color: $text-color;
