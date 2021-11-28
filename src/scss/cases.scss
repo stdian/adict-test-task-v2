@@ -1,5 +1,5 @@
 $selected-case-color: #F3F9FF;
-$case-border: 1px solid rgba(56, 152, 254, 0.187528);
+$case-border: 1px solid rgba(56, 152, 254, .187528);
 $slider-big: 1100px;
 $dot-color: #B2EEFC;
 
@@ -39,11 +39,11 @@ $show-slider: 1099px;
 	}
 
 	.cases-desktop {
-		width: 100%;
-		margin: 0 auto;
 		display: flex;
 		flex-direction: row;
 		justify-content: space-between;
+		width: 100%;
+		margin: 0 auto;
 
 		@media screen and (min-width: $show-slider) and (max-width: $big){
 			width: 976px;
@@ -62,12 +62,12 @@ $show-slider: 1099px;
 		}
 
 		.cases__pagination {
-			margin: 0 auto;
-			width: max-content;
-			margin-top: 29px;
 			display: flex;
 			align-items: center;
-
+			width: max-content;
+			margin: 0 auto;
+			margin-top: 29px;
+			
 			@media screen and (max-width: $medium) {
 				margin-top: 18px;
 			}
@@ -84,10 +84,10 @@ $show-slider: 1099px;
 			}
 
 			.swiper-pagination-bullet-active {
-				background: $reverse-gradient;
 				width: 16px;
 				height: 16px;
 				border: 0;
+				background: $reverse-gradient;
 	
 				@media screen and (max-width: $medium) {
 					width: 10px;
@@ -108,12 +108,12 @@ $show-slider: 1099px;
 	}
 
 	.case {
-		width: 346px;
-		height: 297px;
-		border: $case-border;
 		display: flex;
 		flex-direction: column;
 		justify-content: space-between;
+		width: 346px;
+		height: 297px;
+		border: $case-border;
 
 		@media screen and (max-width: $big) {
 			width: 310px;
@@ -149,8 +149,8 @@ $show-slider: 1099px;
 		}
 
 		.text {
-			margin-left: 24px;
 			margin-bottom: 20px;
+			margin-left: 24px;
 
 			@media screen and (max-width: $medium) {
 				margin-left: 16px;
@@ -174,22 +174,20 @@ $show-slider: 1099px;
 
 			.text__link {
 				display: inline;
-
+				background: $gradient;
+				background-clip: text;
+				color: transparent;
+				text-decoration: none;
 				font-family: $font;
 				font-style: normal;
 				font-weight: 600;
 				font-size: 16px;
 				line-height: 22px;
-				letter-spacing: 0.369231px;
-
-				text-decoration: none;
-				background: $gradient;
-				background-clip: text;
-				color: transparent;
+				letter-spacing: .369231px;
 
 				img {
-					margin-left: 5px;
 					margin-bottom: -2px;
+					margin-left: 5px;
 				}
 
 				&:visited, &:hover, &:focus{
@@ -202,17 +200,17 @@ $show-slider: 1099px;
 	}
 
 	.case_selected {
-		background: $selected-case-color;
-		border: 0;
 		position: relative;
+		border: 0;
+		background: $selected-case-color;
 
 		&:after {
+			content: "";
 			position: absolute;
 			top: 100%; bottom: -3px;
 			left: 0; right: 0;
-			background: $gradient;
-			content: '';
 			z-index: 2;
+			background: $gradient;
 		}
 	}
 
@@ -242,10 +240,10 @@ $show-slider: 1099px;
 
 		.react-multi-carousel-dot--active {
 			button {
-				background: $reverse-gradient;
 				width: 16px;
 				height: 16px;
 				border: 0;
+				background: $reverse-gradient;
 	
 				@media screen and (max-width: $medium) {
 					width: 10px;

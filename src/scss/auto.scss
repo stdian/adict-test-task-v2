@@ -1,18 +1,18 @@
 $auto-bg: #E8F4F7;
 $auto-form-bg: #FFFFFF;
-$email-border-color: rgba(56, 152, 254, 0.4);
+$email-border-color: rgba(56, 152, 254, .4);
 
 .auto {
+	overflow: hidden;
 	width: 1098px;
 	min-height: 294px;
-	overflow: hidden;
 	margin: 0 auto;
 	margin-top: 140px;
 	background-color: $auto-bg;
 	background-image: url("../img/bg/bg2.svg");
-	background-repeat: no-repeat;
 	background-position-x: 667px;
 	background-position-y: 20.5px;
+	background-repeat: no-repeat;
 
 	@media screen and (max-width: $big) {
 		width: 639px;
@@ -28,8 +28,8 @@ $email-border-color: rgba(56, 152, 254, 0.4);
 		height: 356px;
 		margin-top: 45px;
 
-		background-size: 203.7px 244.5px;
 		background-position-x: 325px;
+		background-size: 203.7px 244.5px;
 	}
 
 	.auto__left-side {
@@ -46,16 +46,22 @@ $email-border-color: rgba(56, 152, 254, 0.4);
 			color: $text-color;
 
 			@media screen and (max-width: $big) {
-				margin-left: 0px;
 				margin-top: 0px;
+				margin-left: 0px;
 				padding-top: 60px;
+				padding-bottom: 0;
+				padding-left: 0;
+				padding-right: 0;
 				text-align: center;
 			}
 
 			@media screen and (max-width: $medium) {
+				padding-bottom: 0;
+				padding-left: 0;
+				padding-right: 0;
 				font-size: 28px;
 				line-height: 36px;
-				letter-spacing: 0.44px;
+				letter-spacing: .44px;
 			}
 		}
 	}
@@ -71,19 +77,20 @@ $email-border-color: rgba(56, 152, 254, 0.4);
 			width: 433.2px;
 			padding: 70px 100px 60px 0px;
 
-		@extend %text-info-text-style;
+			@extend %text-info-text-style;
 			color: $text-color;
 
 			@media screen and (max-width: $big) {
 				margin: 0 auto;
 				margin-top: 24px;
-				text-align: center;
 				margin-bottom: 48px;
+				padding: 0;
+				text-align: center;
 			}
 
 			@media screen and (max-width: $medium) {
-				min-width: 278px;
 				width: 90%;
+				min-width: 278px;
 			}
 		}
 
@@ -121,7 +128,5 @@ $email-border-color: rgba(56, 152, 254, 0.4);
 				}
 			}
 		}
-
-		
 	}
 }

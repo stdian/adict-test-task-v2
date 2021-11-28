@@ -1,3 +1,4 @@
+
 .btn {
 	height: 48px;
 	@extend %button-text-style;
@@ -5,7 +6,7 @@
 	cursor: pointer;
 
 	&:hover {
-		box-shadow: 0px 6px 18px rgba(53, 152, 254, 0.38185);
+		box-shadow: 0px 6px 18px rgba(53, 152, 254, .38185);
 	}
 
 	&:focus {
@@ -26,19 +27,19 @@
 }
 
 .btn_white {
-	background: $btn-white-bg;
-	border: 1px solid transparent;
-    border-radius: 44px;
 	position: relative;
+	border: 1px solid transparent;
+	border-radius: 44px;
+	background: $btn-white-bg;
 	
 	&:after {
+		content: "";
 		position: absolute;
 		top: -2px; bottom: -2px;
 		left: -2px; right: -2px;
-		background: $gradient;
-		content: '';
 		z-index: -1;
 		border-radius: 44px;
+		background: $gradient;
 	}
 
 	span {
@@ -49,9 +50,9 @@
 }
 
 .btn_blue {
-	background: $reverse-gradient;
-	border: 0;	
+	border: 0;
 	border-radius: 44px;
+	background: $reverse-gradient;
 	
 	span {
 		color: $btn-blue-text;

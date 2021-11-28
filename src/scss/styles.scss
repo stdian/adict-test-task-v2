@@ -1,7 +1,7 @@
 $font: Avenir Next Cyr;
 $gradient: linear-gradient(#1792C7, #00B8F0);
 $bg-color: #F3F9FF;
-$input-text-placeholder-color: #1792c799;
+$input-text-placeholder-color: #1792C799;
 $text-color: #2D3238;
 $btn-white-bg: #FFFFFF;
 $reverse-gradient: linear-gradient(180deg, #1792C7 0%, #00B8F0 100%);
@@ -11,22 +11,22 @@ $mobile-menu-text-color: #555E68;
 $medium: 767px;
 $big: 1439px;
 
-@import 'font';
-@import 'header';
-@import 'menu';
-@import 'button';
-@import 'slider';
-@import 'email_input';
-@import 'offer';
-@import 'how_it_works';
-@import 'auto';
-@import 'banks';
-@import 'for_who';
-@import 'cases';
-@import 'tariffs';
-@import 'soon';
-@import 'safety';
-@import 'footer';
+@import "font";
+@import "header";
+@import "menu";
+@import "button";
+@import "slider";
+@import "email_input";
+@import "offer";
+@import "how_it_works";
+@import "auto";
+@import "banks";
+@import "for_who";
+@import "cases";
+@import "tariffs";
+@import "soon";
+@import "safety";
+@import "footer";
 
 * {
 	margin: 0;
@@ -34,12 +34,11 @@ $big: 1439px;
 }
 
 body {
+	overflow-x: hidden;
 	background-image: url("../img/bg/bg1.svg"), url("../img/bg/bg2.svg"), url("../img/bg/bg1.svg"), url("../img/bg/bg1_rotated.svg");
-	background-repeat: no-repeat, no-repeat, no-repeat, no-repeat;
 	background-position-x: calc(50% + 330px), calc(50% - 535px), calc(50% + 500px), calc(50% - 640px);
 	background-position-y: 650px, 1650px, 3303px, 3550px;
-
-	overflow-x: hidden;
+	background-repeat: no-repeat, no-repeat, no-repeat, no-repeat;
 
 	main {
 		.title {
@@ -51,18 +50,18 @@ body {
 
 	@media screen and (max-width: $big) {
 		background-image: url("../img/bg/bg1.svg"), url("../img/bg/bg1_rotated.svg");
-		background-repeat: no-repeat, no-repeat;
-		background-size: 478px 327.05px, 384.69px 562.24px;
 		background-position-x: calc(50% + 350px), calc(50% - 490px);
 		background-position-y: 4120px, 4555px;
+		background-size: 478px 327.05px, 384.69px 562.24px;
+		background-repeat: no-repeat, no-repeat;
 	}
 
 	@media screen and (max-width: $medium) {
 		background-image: url("../img/bg/bg1.svg"), url("../img/bg/bg1_rotated.svg");
-		background-repeat: no-repeat, no-repeat;
-		background-size: 342px 234px, 268.74px 392.77px;
 		background-position-x: calc(50% + 100px), calc(50% - 135px);
 		background-position-y: 4170px, 4850px;
+		background-size: 342px 234px, 268.74px 392.77px;
+		background-repeat: no-repeat, no-repeat;
 	}
 }
 

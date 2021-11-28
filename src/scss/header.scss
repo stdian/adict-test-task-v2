@@ -1,16 +1,16 @@
 header {
-	min-width: 1098px;
-	width: fit-content;
 	display: flex;
+	flex-direction: row;
+	align-items: center;
+	justify-content: space-between;
+	width: fit-content;
+	min-width: 1098px;
 	margin: 0 auto;
 	margin-top: 35px;
-	flex-direction: row;
-	justify-content: space-between;
-	align-items: center;
-
+	
 	@media screen and (max-width: $big) {
-		min-width: unset;
 		width: 100%;
+		min-width: unset;
 		margin-top: 50px;
 	}
 
@@ -26,9 +26,10 @@ header {
 		}
 
 		ul {
-			width: 100%;
 			display: flex;
 			justify-content: space-between;
+			width: 100%;
+			
 			li {
 				display: inline;
 				
@@ -50,9 +51,9 @@ header {
 		}
 
 		@media screen and (max-width: $medium) {
-			margin-left: 21px;
 			width: 97px;
 			height: 15.23px;
+			margin-left: 21px;
 		}
 	}
 
@@ -69,25 +70,24 @@ header {
 			display: inline;
 			@extend %header-lang-text-style;
 			color: $text-color;
-			opacity: 0.5;
+			opacity: .5;
 		}
 
 		.header__language-selected {
+			position: relative;
+			border-bottom: 1px solid transparent;
 			background: $gradient;
 			background-clip: text;
 			color: transparent;
 			opacity: 1;
 			
-			border-bottom: 1px solid transparent;
-			position: relative;
-			
 			&:after {
+				content: "";
 				position: absolute;
 				top: 20px; bottom: 1px;
 				left: 2px; right: 3px;
-				background: $gradient;
-				content: '';
 				z-index: -1;
+				background: $gradient;
 			}
 		}
 	}
@@ -108,8 +108,8 @@ header {
 
 	.btn_big {
 		display: flex;
-		justify-content: space-around;
 		align-items: center;
+		justify-content: space-around;
 
 		span {
 			padding-bottom: 2px;

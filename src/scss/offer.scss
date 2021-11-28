@@ -1,14 +1,14 @@
 .offer {
 	display: flex;
-    flex-direction: row;
-    justify-content: center;
-	margin-top: 235px;
+	flex-direction: row;
 	align-items: center;
+	justify-content: center;
+	margin-top: 235px;
 
 	@media screen and (max-width: $big) {
-		margin-top: 118px;
 		flex-direction: column-reverse;
 		align-items: center;
+		margin-top: 118px;
 	}
 
 	@media screen and (max-width: $medium) {

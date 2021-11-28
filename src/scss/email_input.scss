@@ -1,7 +1,7 @@
-
 .email-input {
-	width: 440px;
 	box-sizing: border-box;
+	width: 440px;
+	
 	.email-form {
 		width: 100%;
 
@@ -9,23 +9,24 @@
 			box-sizing: border-box;
 
 			.email-form__input {
+				box-sizing: border-box;
 				width: 303px;
 				height: 48px;
-				border-top-left-radius: 44px;
-				border-bottom-left-radius: 44px;
-				border: 0;
-				background: $bg-color;
-				box-sizing: border-box;
-
-				@extend %email-input-text-style;
 				padding-left: 20px;
 				padding-right: 26px;
+				border: 0;
+				border-top-left-radius: 44px;
+				border-bottom-left-radius: 44px;
+				background: $bg-color;
 
+				@extend %email-input-text-style;
+				
 				color: $text-color;
 				&:focus {
-					outline: none; 
 					color: $text-color;
+					outline: none; 
 				}
+
 				&::placeholder {
 					color: $input-text-placeholder-color;
 				}
@@ -38,18 +39,18 @@
 	}
 
 	.email-form_success {
+		display: none;
 		width: 100%;
 		height: 48px;
-		background: $bg-color;
 		border-radius: 44px;
-		display: none;
+		background: $bg-color;
 
 		div {
 			display: flex;
-			height: 48px;
 			align-items: center;
 			justify-content: center;
-
+			height: 48px;
+			
 			.email-form__success-img {
 				width: 16px;
 				height: 16px;
@@ -62,7 +63,7 @@
 				font-weight: normal;
 				font-size: 16px;
 				line-height: 24px;
-				letter-spacing: 0.96px;
+				letter-spacing: .96px;
 				color: $text-color;
 			}
 		}

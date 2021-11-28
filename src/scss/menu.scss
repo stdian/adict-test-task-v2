@@ -4,8 +4,8 @@
 	flex-direction: column;
 	align-content: center;
 	align-items: center;
-	min-height: calc(100vh - 71px);
 	justify-content: center;
+	min-height: calc(100vh - 71px);
 
 	@media screen and (max-width: $medium) {
 		height: calc(100vh - 43.22px);
@@ -20,14 +20,14 @@
 				margin-bottom: 32px;
 	
 				a {
+					color: $mobile-menu-text-color;
 					text-decoration: none;
 					font-family: $font;
 					font-style: normal;
 					font-weight: 500;
 					font-size: 24px;
 					line-height: 33px;
-					letter-spacing: 0.96px;
-					color: $mobile-menu-text-color;
+					letter-spacing: .96px;
 
 					&:visited, &:focus {
 						color: $mobile-menu-text-color;
@@ -39,8 +39,8 @@
 	
 	.btn {
 		display: flex;
-		justify-content: space-around;
 		align-items: center;
+		justify-content: space-around;
 		margin-top: 4px;
 
 		span {

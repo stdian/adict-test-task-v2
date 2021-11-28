@@ -1,15 +1,15 @@
-$banks-block-border-color: 1px solid rgba(56, 152, 254, 0.187528);
-$banks-block-header-color: rgba(56, 152, 254, 0.5);
+$banks-block-border-color: 1px solid rgba(56, 152, 254, .187528);
+$banks-block-header-color: rgba(56, 152, 254, .5);
 
 .banks {
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
 	width: 1098px;
 	min-height: 556px;
 	margin: 0 auto;
 	margin-top: 140px;
-	display: flex;
-	flex-direction: column;
-	justify-content: space-between;
-
+	
 	@media screen and (max-width: $big) {
 		width: 536px;
 		min-height: 996px;
@@ -37,15 +37,15 @@ $banks-block-header-color: rgba(56, 152, 254, 0.5);
 	}
 
 	.banks__blocks {
-		width: 100%;
-		min-height: 420px;
 		display: flex;
 		flex-direction: row;
 		justify-content: space-between;
+		width: 100%;
+		min-height: 420px;
 
 		@media screen and (max-width: $big) {
-			min-height: 880px;
 			flex-direction: column;
+			min-height: 880px;
 		}
 
 		@media screen and (max-width: $medium) {
@@ -64,11 +64,11 @@ $banks-block-header-color: rgba(56, 152, 254, 0.5);
 		}
 
 		h3 {
-			@extend %text-info-text-style;
-			color: $banks-block-header-color;
-
 			padding-top: 20px;
 			padding-left: 41px;
+
+			@extend %text-info-text-style;
+			color: $banks-block-header-color;
 
 			@media screen and (max-width: $medium) {
 				padding-left: 16px;
@@ -79,16 +79,17 @@ $banks-block-header-color: rgba(56, 152, 254, 0.5);
 	.left-block {
 		.left-block__banks {
 			display: grid;
+			grid-template-columns: repeat(2, 1fr);
 			grid-column-gap: 42.85px;
 			align-items: start;
-			grid-template-columns: repeat(2, 1fr);
+			
 			padding-left: 45px;
 			padding-right: 45px;
 
 			@media screen and (max-width: $medium) {
+				grid-column-gap: 25px;
 				padding-left: 16px;
 				padding-right: 16px;
-				grid-column-gap: 25px;
 			}
 
 			img {
@@ -104,7 +105,7 @@ $banks-block-header-color: rgba(56, 152, 254, 0.5);
 			margin: 0 auto;
 			margin-top: 36.79px;
 			background: $gradient;
-			opacity: 0.2;
+			opacity: .2;
 
 			@media screen and (max-width: $medium) {
 				width: 247px;
@@ -113,16 +114,16 @@ $banks-block-header-color: rgba(56, 152, 254, 0.5);
 		}
 
 		.upload1c {
-			width: 218px;
-			height: 55px;
 			display: flex;
 			align-items: center;
-			margin-left: 40px;
+			width: 218px;
+			height: 55px;
 			margin-top: 29.21px;
+			margin-left: 40px;
 
 			@media screen and (max-width: $medium) {
-				margin-left: 11px;
 				margin-top: 16px;
+				margin-left: 11px;
 			}
 
 			span {
@@ -138,17 +139,17 @@ $banks-block-header-color: rgba(56, 152, 254, 0.5);
 
 	.right-block {
 		.integrations {
-			min-height: 279.35px;
-			margin-left: 40px;
-			margin-top: 36px;
 			display: flex;
 			flex-direction: column;
 			justify-content: space-between;
+			min-height: 279.35px;
+			margin-top: 36px;
+			margin-left: 40px;
 
 			@media screen and (max-width: $medium) {
 				min-height: 160px;
-				margin-left: 16px;
 				margin-top: 28px;
+				margin-left: 16px;
 			}
 
 			.integrations__item {

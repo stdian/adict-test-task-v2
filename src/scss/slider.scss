@@ -1,11 +1,11 @@
 
 .carousel__item {
-	margin: 0 auto;
-	margin-top: 91px;
 	display: flex;
 	flex-direction: row;
-	justify-content: space-between;
 	align-items: center;
+	justify-content: space-between;
+	margin: 0 auto;
+	margin-top: 91px;
 
 	@media screen and (max-width: $big) {
 		flex-direction: column;
@@ -18,8 +18,8 @@
 	}
 	
 	.carousel__info {
-		min-width: 470px;
 		width: min-content;
+		min-width: 470px;
 
 		@media screen and (max-width: $medium) {
 			width: 278px;
@@ -29,9 +29,11 @@
 		.carousel__title {
 			width: 100%;
 			margin-bottom: 10px;
+
 			@extend %h0-text-style;
-			text-align: left;
 			color: $text-color;
+			text-align: left;
+			
 
 			@media screen and (max-width: $big) {
 				margin-bottom: 24px;
@@ -52,8 +54,8 @@
 
 		.carousel__text {
 			@extend %text-info-text-style;
-			text-align: left;
 			color: $text-color;
+			text-align: left;
 
 			@media screen and (max-width: $big) {
 				text-align: center;
@@ -75,36 +77,37 @@
 		}
 
 		@media screen and (max-width: $medium) {
-			margin-top: 30px;
 			width: 70%;
+			margin-top: 30px;
 		}
 	}
 }
 
 #carousel__item-1 {
-	min-width: 1024.17px;
 	width: fit-content;
+	min-width: 1024.17px;
+	
 }
 
 #carousel__item-2 {
-	min-width: 1038.68px;
 	width: fit-content;
+	min-width: 1038.68px;
 }
 
 #carousel__item-3 {
-	min-width: 1234px;
 	width: fit-content;
+	min-width: 1234px;
 
 	.carousel__image {
-		box-shadow: 0px 10px 24px rgba(0, 0, 0, 0.06), 0px 0px 6px rgba(0, 0, 0, 0.04), 0px 0px 1px rgba(0, 0, 0, 0.04);
 		border-radius: 10px;
+		box-shadow: 0px 10px 24px rgba(0, 0, 0, .06), 0px 0px 6px rgba(0, 0, 0, .04), 0px 0px 1px rgba(0, 0, 0, .04);
 	}
 }
 
 #carousel__item-4 {
-	min-width: 991.17px;
-	width: fit-content;
 	align-items: normal;
+	width: fit-content;
+	min-width: 991.17px;
 
 	@media screen and (max-width: $big) {
 		align-items: center;

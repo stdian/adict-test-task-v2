@@ -48,22 +48,22 @@
 			grid-template-columns: repeat(1, 1fr);
 			grid-row-gap: 40px;
 			width: 200px;
-			min-height: 534px;
 			height: fit-content;
+			min-height: 534px;
 			margin: 0 auto;
 			margin-top: 40px;
 		}
 
 		.how-it-works__data {
 			display: flex;
-			align-items: center;
 			flex-direction: column;
+			align-items: center;
 			justify-content: space-between;
 
 			p {
 				@extend %text-info-text-style;
-				text-align: center;
 				color: $text-color;
+				text-align: center;
 
 				@media screen and (max-width: $big) {
 					font-size: 16px;

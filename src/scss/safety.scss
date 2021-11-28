@@ -1,11 +1,11 @@
 .safety {
+	display: flex;
+	flex-direction: row-reverse;
+	justify-content: space-between;
 	width: 1035.04px;
 	min-height: 360px;
 	margin: 0 auto;
 	margin-top: 160px;
-	display: flex;
-	flex-direction: row-reverse;
-	justify-content: space-between;
 
 	@media screen and (max-width: $big) {
 		width: 640px;
@@ -14,10 +14,10 @@
 	}
 
 	@media screen and (max-width: $medium) {
+		flex-direction: column-reverse;
 		width: 278px;
 		min-height: 551px;
 		margin-top: 127px;
-		flex-direction: column-reverse;
 	}
 
 	.safety__info {
@@ -26,12 +26,12 @@
 		}
 
 		.safety__header {
-			width: max-content;
 			position: relative;
+			width: max-content;
 			margin-bottom: 28px;
 			@extend %h0-text-style;
 			color: $text-color;
-	
+
 			@media screen and (max-width: $big) {
 				width: 100%;
 				margin-bottom: 70px;
@@ -54,18 +54,18 @@
 	
 			@media screen and (max-width: $big) {
 				width: 420px;
-				margin-left: auto;
 				min-height: 168px;
+				margin-left: auto;
 				font-size: 18px;
 				line-height: 28px;
-				letter-spacing: 0.443077px;
+				letter-spacing: .443077px;
 			}
 	
 			@media screen and (max-width: $medium) {
 				position: inherit;
-				margin-top: 40px;
 				width: 278px;
 				height: 252px;
+				margin-top: 40px;
 			}
 		}
 	}
@@ -83,10 +83,10 @@
 			margin-top: -35.5px;
 
 			@media screen and (max-width: $big) {
+				position: absolute;
+				top: 120px;
 				width: 200px;
 				height: 180.87px;
-				top: 120px;
-				position: absolute;
 				margin-top: 0;
 			}
 

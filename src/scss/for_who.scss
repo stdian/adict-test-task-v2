@@ -30,12 +30,12 @@
 	}
 
 	.items {
-		width: 1098px;
-		min-height: 357px;
-		margin-top: 90px;
 		display: grid;
 		grid-template-columns: repeat(3, 1fr);
 		grid-row-gap: 30px;
+		width: 1098px;
+		min-height: 357px;
+		margin-top: 90px;
 
 		@media screen and (max-width: $big) {
 			width: 639px;
@@ -46,18 +46,18 @@
 		@media screen and (max-width: $medium) {
 			grid-template-columns: repeat(1, 1fr);
 			width: 200px;
-			min-height: 899px;
 			height: max-content;
+			min-height: 899px;
 			margin-top: 40px;
 		}
 
 		.item {
-			width: 346px;
-			height: 328px;
 			display: flex;
 			flex-direction: column;
 			align-items: center;
 			justify-content: space-between;
+			width: 346px;
+			height: 328px;
 
 			@media screen and (max-width: $big) {
 				width: 199px;
@@ -66,8 +66,8 @@
 	
 			@media screen and (max-width: $medium) {
 				width: 200px;
-				min-height: 287px;
 				height: fit-content;
+				min-height: 287px;
 			}
 
 			.item__img {
@@ -84,9 +84,8 @@
 				}
 		
 				@media screen and (max-width: $medium) {
-					min-height: 122px;
 					height: fit-content;
-
+					min-height: 122px;
 				}
 
 				.info__header {
